@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import express, { Router, application } from 'express'
+import express, { Router } from 'express'
 import cors from 'cors'
 import bodyParser from 'body-parser'
 import mongoose, { now } from 'mongoose'

@@ -9,7 +9,7 @@ const api = express()
 
 api.use(cors())
 api.use(bodyParser.json())
-const router = Router; 
+
 
 mongoose.connect(process.env.DATABASE_URL)
 
@@ -26,6 +26,7 @@ const journeySchema = new mongoose.Schema({
     },
 })
 
+const router = Router; 
 const hotelSchema = new mongoose.Schema({
     name: String,
     link: String,

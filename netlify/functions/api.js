@@ -6,6 +6,7 @@ import mongoose, { now } from 'mongoose'
 import serverless from 'serverless-http'
 
 const api = express()
+const router = Router()
 
 api.use(cors())
 api.use(bodyParser.json())
@@ -26,7 +27,6 @@ const journeySchema = new mongoose.Schema({
     },
 })
 
-const router = Router; 
 const hotelSchema = new mongoose.Schema({
     name: String,
     link: String,

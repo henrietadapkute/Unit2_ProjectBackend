@@ -303,4 +303,4 @@ router.post('/user/login', async (req, res) => {
 });
 
 api.use("/api/", router)
-export const handdler = serverless(api)
+export const handler = serverless(api)

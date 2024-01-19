@@ -261,7 +261,7 @@ app.post('/essentials/new', (req, res) => {
     myEssentials.save()
     .then(() => {
         console.log(`New essential ${essentials.title}, was added to the data base`)
-        res.sendStatus(200)
+        res.status(200).json(myEssentials)
     })
     .catch(error => console.error(error))
 })
